@@ -19,21 +19,21 @@ public class Range {
             }
             if (count > 0) {//после проверки всех диапазонов вывожу сообщение об ошибке
                 System.out.println("Неверно введены диапазоны");
-            } else System.out.println(Arrays.toString(range));
+            } else /*System.out.println(Arrays.toString(range));*/
             System.out.println(Arrays.toString(rangeLenght));
         }
         return range;
     }
-    public void IntersectionRange(int[] range) {//
-        for (int i = 0; i < range.length; i = i + 2) {
-            for (int j = 0; j < range.length; j = j + 2) {
-                if ((range[j] >= range[i] && range[j] <= range[i + 1]) || (range[j + 1] > range[i] && range[j + 1] < range[i + 1])) {
-                    if (i == j) {
-                        continue;
-                    }
-                    System.out.println("пересекаются" + "(" + range[i] + "," + range[i + 1] + ")" + "(" + range[j] + "," + range[j + 1] + ")");
-                }
-            }
-        }
-    }
+//    public void IntersectionRange(int[] range) {//
+//        for (int i = 0; i < range.length; i = i + 2) {
+//            for (int j = 0; j < range.length; j = j + 2) {
+//                if ((range[j] >= range[i] && range[j] <= range[i + 1]) || (range[j + 1] > range[i] && range[j + 1] < range[i + 1])) {
+//                    if (i == j) {
+//                        continue;
+//                    }
+//                    System.out.println("пересекаются" + "(" + range[i] + "," + range[i + 1] + ")" + "(" + range[j] + "," + range[j + 1] + ")");
+//                }
+//            }
+//        }
+//    }
 }
